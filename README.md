@@ -10,7 +10,7 @@ To install the package, you can either use `npm`or `yarn`:
 
 npm install @if24b247/password-utilities
 
-# or
+// or
 
 yarn install @if24b247/password-utilities
 
@@ -26,11 +26,11 @@ yarn install @if24b247/password-utilities
 
 const {generateStrongPassword} = require('@if24b247/password-utilities')
 
-# generates a password with a length of 12
+// generates a password with a length of 12
 const password = generateStrongPassword();
 
 
-# generates a password based on the input length
+// generates a password based on the input length
 const longPassword = generateStrongPassword(24);
 
 ```
@@ -44,9 +44,9 @@ const longPassword = generateStrongPassword(24);
 const { isStrongPassword } = require('@if24b247/password-utilities')
 
 
-console.log(isStrongPassword('Hello World')) # weak password -> returns false
+console.log(isStrongPassword('Hello World')) // weak password -> returns false
 
 
-console.log(isStrongPassword('@g@nrV%Uo$B61i6Hhl')) # strong password -> returns true
+console.log(isStrongPassword('@g@nrV%Uo$B61i6Hhl')) // strong password -> returns true
 
 ```
