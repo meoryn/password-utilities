@@ -1,7 +1,12 @@
 function generateStrongPassword(length = 12) {
+
+    if(length < 8) {
+        throw new Error('Password length must be at least 8 characters');
+    }
+
     const allowedPasswordCharacters =
         'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
-    const strongPassword = Array.from({ length }, () => {
+    let strongPassword = Array.from({ length }, () => {
         const randomAllowedPasswordCharacterIndex = Math.floor(
             Math.random() * allowedPasswordCharacters.length,
         );
@@ -10,6 +15,11 @@ function generateStrongPassword(length = 12) {
         );
         return randomAllowedPasswordCharacter;
     }).join('');
+
+    while (!isStrongPassword(strongPassword)) {
+        strongPassword = generateStrongPassword(length);
+    }
+
     return strongPassword;
 }
 function isStrongPassword(password) {
