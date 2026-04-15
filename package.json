@@ -9,6 +9,14 @@
   "scripts": {
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meoryn/password-utilities.git"
+  },
+  "bugs": {
+    "url": "https://github.com/meoryn/password-utilities/issues"
+  },
+  "homepage": "https://github.com/meoryn/password-utilities#readme",
   "devDependencies": {
     "jest": "^30.3.0"
   }
