@@ -1,0 +1,15 @@
+{
+  "name": "@if24b247/password-utilities",
+  "version": "1.0.0",
+  "description": "Library for password utilities",
+  "license": "MIT",
+  "author": "if24b247",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
